@@ -1,0 +1,68 @@
+.container{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo{
+  width: 30%;
+  float: left;  
+ }
+ h1{
+  display:inline-block;
+  margin-left: 20px;
+ }
+ h2{
+  text-align: center;
+  margin-bottom: 30px;
+ }
+ .grupo{
+  text-align: center;  
+  margin-left: 30px;
+  padding-top:60px;  
+ }
+ h4{
+  color:rgb(167, 3, 3);
+  font-size: 20px;
+ } 
+ ul{  
+  display:inline-block;
+  margin-right: 25px;   
+ }
+ li{
+  text-align: left;
+  font-size: 16px;
+  color:rgb(43, 43, 95);
+ }
+ .equipe{
+  width: 20%;
+  border-radius: 10px;
+ }
+ .aceno{
+  margin: 0;
+  font-style: italic;
+ }
+ p{
+  font-size:18px;
+ } 
+ .perfil_giu .cor{
+   color:brown;
+   font-size: 20px;
+   font-weight: bold;
+ }
+ .perfil_jesus .cor{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .perfil_lari .cor{
+   color: orangered;
+   font-size: 20px;
+   font-weight: bold;
+ } 
+ .perfil_sil .cor{
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;   
+ }
+ .perfil_giu, .perfil_jesus, .perfil_lari, .perfil_sil{
+  margin-left: 20px;
+ } 
+ 
