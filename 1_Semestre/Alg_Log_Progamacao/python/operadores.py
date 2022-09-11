@@ -159,6 +159,52 @@ class relacionais:
 
 #relacionais(1, 2).relacionais1()
 
+class logicos:
+    def __init__(self,numero):
+        self.numero = numero
+
+    def logicos1(self):
+        from tkinter import messagebox
+
+        if ((1 == (2 -1)) and (2 == (1 + 1))):
+            messagebox.showinfo('Mensagem', str('Ambas as expressões são verdadeiras'))
+            print('Ambas as expressões são verdadeiras')
+
+        if ((1 != (2 -1)) or (2 == (1+1))):
+            messagebox.showinfo('Mensagem', str('iguais'))
+            print('iguais')
+
+#logicos(1).logicos1()
+
+class exemplo:
+    def __init__(self, quantidadeAnos, horasTrabalhadas, valorHora, salario):
+        self.quantidadeAnos = quantidadeAnos
+        self.horasTrabalhadas = horasTrabalhadas
+        self.valorHora = valorHora
+        self.salario = salario
+
+    def exemplo1(self):
+        from tkinter import messagebox
+
+        if (self.quantidadeAnos <= 1):
+            self.salario = 1500 + (self.valorHora * self.horasTrabalhadas)
+
+        elif ((self.quantidadeAnos > 1) and (self.quantidadeAnos < 3)):
+            self.salario = 2000 + (self.valorHora * self.horasTrabalhadas)
+
+        else:
+           self.salario = 3000 + (self.valorHora * self.horasTrabalhadas)
+
+           messagebox.showinfo ('Mensagem', 'Salario = ' + str(self.salario))
+           print('Salario = ' + str(self.salario))
+
+#exemplo(5,40,50,0).exemplo1()
+
+
+
+
+
+
         
 
 
