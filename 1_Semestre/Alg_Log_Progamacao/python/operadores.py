@@ -188,9 +188,13 @@ class exemplo:
 
         if (self.quantidadeAnos <= 1):
             self.salario = 1500 + (self.valorHora * self.horasTrabalhadas)
+            messagebox.showinfo ('Mensagem', 'Salario = ' + str(self.salario))
+            print('Salario = ' + str(self.salario))
 
         elif ((self.quantidadeAnos > 1) and (self.quantidadeAnos < 3)):
             self.salario = 2000 + (self.valorHora * self.horasTrabalhadas)
+            messagebox.showinfo ('Mensagem', 'Salario = ' + str(self.salario))
+            print('Salario = ' + str(self.salario))
 
         else:
            self.salario = 3000 + (self.valorHora * self.horasTrabalhadas)

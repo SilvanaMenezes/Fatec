@@ -29,10 +29,10 @@ public class BackEndRCT2022 {
         //Operadores.logicos();
         //Operadores.exemplos();
         // aula2
-        Decisao.DecisaoSimples("TESTE");
+        //Decisao.DecisaoSimples("TESTE");
         //Decisao.DecisaoComposta("TES");
         //Decisao.DecisaoEncadeada("NAO TESTE");
-	//Decisao.DecisaoCaso(30);
+	Decisao.DecisaoCaso(3);
         // aula 3
         //Repeticao.enquanto(2);
         //Repeticao.repita(5);
