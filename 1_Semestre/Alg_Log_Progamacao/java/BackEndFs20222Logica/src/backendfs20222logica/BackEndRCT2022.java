@@ -32,10 +32,10 @@ public class BackEndRCT2022 {
         //Decisao.DecisaoSimples("TESTE");
         //Decisao.DecisaoComposta("TES");
         //Decisao.DecisaoEncadeada("NAO TESTE");
-	Decisao.DecisaoCaso(3);
+	//Decisao.DecisaoCaso(3);
         // aula 3
         //Repeticao.enquanto(2);
-        //Repeticao.repita(5);
+        Repeticao.repita(5);
         //Repeticao.para(8);
         
 
