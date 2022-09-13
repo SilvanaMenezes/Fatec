@@ -21,8 +21,6 @@ class atribuicao:
         print('texto = ', self.texto)
         print('area = ', self.area)
 
-#atribuicao(2,3.1426,"A","DevMedia",4).atribuicao1()
-
 class aritmeticos:
     def __init__(self,n1,n2):
         self.n1 = n1
@@ -50,8 +48,6 @@ class aritmeticos:
         resultado = self.n1 / self.n2
         messagebox.showinfo('divisão', 'div =' + str(resultado))
         print('div =', resultado)
-
-#aritmeticos(5.8,3.2).aritmeticos1()
 
 class incremento:
     def __init__(self,numero):
@@ -82,8 +78,6 @@ class incremento:
         resultado -= 1
         messagebox.showinfo('desafioDois', + resultado)
         print(resultado)
-
-#incremento(5).incremento1()
 
 class igualdade:
     def __init__(self, valorA, valorB, textoA, textoB):
@@ -127,8 +121,6 @@ class igualdade:
             messagebox.showinfo('Mensagem', str('TEXTOS iguais'))
             print('TEXTOS iguais')
 
-#igualdade(1, 2, "TESTE", "TEXTO").igualdade1()
-
 class relacionais:
     def __init__(self, valorA, valorB):
         self.valorA = valorA
@@ -157,8 +149,6 @@ class relacionais:
             messagebox.showinfo('Mensagem', str('igual'))
             print('igual')
 
-#relacionais(1, 2).relacionais1()
-
 class logicos:
     def __init__(self,numero):
         self.numero = numero
@@ -173,8 +163,6 @@ class logicos:
         if ((1 != (2 -1)) or (2 == (1+1))):
             messagebox.showinfo('Mensagem', str('iguais'))
             print('iguais')
-
-#logicos(1).logicos1()
 
 class exemplo:
     def __init__(self, quantidadeAnos, horasTrabalhadas, valorHora, salario):
@@ -201,8 +189,6 @@ class exemplo:
 
            messagebox.showinfo ('Mensagem', 'Salario = ' + str(self.salario))
            print('Salario = ' + str(self.salario))
-
-#exemplo(5,40,50,0).exemplo1()
 
 
 

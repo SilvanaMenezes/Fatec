@@ -10,8 +10,6 @@ class enquanto:
             print('Opção ' , self.numero)
             self.numero += 1
 
-#enquanto(2).enquanto1()
-
 class repita:
     def __init__(self,numero):
         self.numero = numero
@@ -26,8 +24,6 @@ class repita:
 
             messagebox.showinfo('Repetição', 'Opção ' + str(self.numero))
             print('Opção ', self.numero)
-
-#repita(4).repita1()
           
 class para:
     def __init__(self,numero):
@@ -38,6 +34,4 @@ class para:
 
         for self.numero in range(8,11):
             messagebox.showinfo('Para', 'Opção: ' +  str(self.numero))
-            print('Opção: ', self.numero)    
-
-#para(8).para1()
+            print('Opção: ', self.numero)

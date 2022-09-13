@@ -9,8 +9,6 @@ class simples:
       messagebox.showinfo ('Mensagem', str(self.texto) + " igual")
       print('igual')
 
-#simples("TESTE").simples1()
-
 class composta:
   def __init__(self,texto):
     self.texto = texto
@@ -25,8 +23,6 @@ class composta:
     else:
       messagebox.showinfo ('Mensagem', str(self.texto) + " diferente")
       print('diferente')
-
-#composta("TES").composta1()
 
 class encadeada:
   def __init__(self,texto):
@@ -46,8 +42,6 @@ class encadeada:
     else:
       messagebox.showinfo ('Mensagem', str(self.texto) + " diferente")
       print('diferente')
-
-#encadeada("NÃO TESTE").encadeada1()
 
 class caso:
   def __init__(self,numero):
@@ -83,8 +77,6 @@ class caso:
     else:
        messagebox.showinfo ('Mensagem', 'Opção desconhecida')
        print('Opção desconhecida')
-
-#caso(3).caso1()
         
         
           
