@@ -4,7 +4,7 @@ maior = 0
 menor = 0
 
 for c in range(0,5):
-  lista.append(int(input(f'Informe {c}o. valor de 5: ')))
+  lista.append(int(input(f'Informe {c+1}o. valor de 5: ')))
 
   if c == 0:
     maior = menor = lista[c]
