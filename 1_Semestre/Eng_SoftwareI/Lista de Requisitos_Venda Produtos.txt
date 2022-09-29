@@ -1,0 +1,16 @@
+App - Sistema para venda de Produtos
+
+*Requisitos Funcionais
+RF01 - Cadastro (Incluir - Alterar - Consultar - Excluir) de Produtos;
+RF02 - Login;
+RF03 - Cadastro (Incluir - Alterar - Consultar) de cliente;
+RF04 - Catálogo dos produtos;
+RF05 - Inserir produto no carrinho;
+RF06 - Fechamento da compra;
+RF07 - Os dados para casastri de produtos são: código, nome, valor e quantidade;
+
+*Regras de Negócio
+RN01 - O cliente poderá cadastrar apenas 10 produtos.
+RN02 - O produto deverá ficar no carrinho e indisponível para o cliente por 30min.
+RN03 - A senha para o login deverá conter números, letras e caracteres especiais e conter 06 digitos.
+
