@@ -1,0 +1,12 @@
+#includes
+
+vetor idades[5];
+vetor nomes [] = {"Katia", "Gabriela", "Thiago", "Beatriz","Silvana"};
+
+função ler idade;
+
+função maior idade e menor idade;
+
+função media;
+
+exibir nomes, idades e médias;

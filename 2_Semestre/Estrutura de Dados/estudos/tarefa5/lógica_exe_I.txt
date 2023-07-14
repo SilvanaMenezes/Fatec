@@ -1,0 +1,53 @@
+#includes
+using
+
+constante float taxa de multa = 0.02
+constante float taxa de juros = 0,0333
+variável int linha = -1;
+
+função ler valorPrestacao()
+{
+	variável valorPrincipal;
+	return valorPrincipal;
+}
+
+função ler quantDiasAtraso()
+{
+	int dias;
+	cont << "Digite dias";
+	return dias;
+}
+
+função valorMulta(taxa de multa, valor)
+{
+    taxa de multa * valor
+    return
+} 
+
+função valorJuros(taxa de juros, valor, dias)
+{
+    taxa de juros * valor * dias
+    return
+}
+
+função valorApagar (valor, valorMulta, valorJuros)
+{
+    valorPagar = valor atual + valor multa + juros
+    return
+}
+
+void mostrar()
+{
+}
+
+void novaLinha(parametros da tabela)
+{
+
+	linha++;
+	preencher vetores;
+}
+
+int main()
+{
+}
+

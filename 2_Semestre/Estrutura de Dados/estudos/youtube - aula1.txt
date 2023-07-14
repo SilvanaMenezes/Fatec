@@ -1,0 +1,38 @@
+Professor - Eliseu Lemes
+YouTube - PlayList Algoritmos e Linguagem de Programação em C++
+
+Aula1: Bibliotecas e a Diretiva using namespace
+
+Código:
+
+#include "iostream" //comandos cin e cout
+#include "math.h" //funções matemáticas
+#include "cstdlib"
+using namespace std; //diretiva using
+
+int main()
+{
+ setlocale(LC_ALL, "Portuguese"); //configuração de idioma e acentuação gráfica
+
+ double base, expoente, potencia;
+
+ cout << "\nDigite a base: ";
+ cin >> base;
+
+ cout << "\nDigite o expoente: ";
+ cin >> expoente;
+
+ potencia = pow(base,expoente);
+
+ cout << base << " elevado a " << expoente << " é: ";
+ cout << potencia << endl;
+
+ system("pause");
+
+return 0; }
+
+
+ 
+
+
+

@@ -1,0 +1,31 @@
+Elaborar um programa que calcule e apresente o volume de uma caixa retangular, por meio da fórmula VOLUME = COMPRIMENTO * LARGURA * ALTURA.
+
+#include "iostream"
+#include "math.h"
+#include "cstdlib"
+using namespace std;
+
+int main()
+{
+ system("clear");
+ setlocale(LC_ALL, "Portuguese");
+ 
+ int comprimento, largura, altura, volume;
+
+ cout << "\nDigite o comprimento da caixa: ";
+ cin >> comprimento;
+
+ cout << "\nDigite a largura da caixa: ";
+ cin >> largura;
+
+ cout << "\nDigite a altura da caixa: ";
+ cin >> altura;
+
+ volume = comprimento * largura * altura;
+
+ cout << "\nA caixa tem capacidade de: " << volume << "m3" << endl;
+
+ system("sleep 2");
+
+ return 0;
+}

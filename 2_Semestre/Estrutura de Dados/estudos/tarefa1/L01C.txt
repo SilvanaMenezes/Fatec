@@ -1,0 +1,31 @@
+Calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula: Volume = pi *Raio2 * Altura
+  
+#include "iostream"
+#include "math.h"
+#include "cstdlib"
+#include "iomanip"
+#define pi 3.14
+using namespace std;
+
+int main()
+{
+ system ("clear");
+ setlocale (LC_ALL, "Portuguese");
+
+ double raio, altura, volume;
+
+ cout << "\nDigite o raio da lata de óleo: ";
+ cin >> raio;
+
+ cout << "\nDigite a altura da lata de óleo: ";
+ cin >> altura;
+
+ volume = pi * (raio * raio) * altura;
+ cout << setprecision(1) << fixed;
+
+ cout << "\nO volume da lata de óleo é: " << volume << "cm3" << endl;
+
+ system ("sleep 2");
+
+ return 0;
+}

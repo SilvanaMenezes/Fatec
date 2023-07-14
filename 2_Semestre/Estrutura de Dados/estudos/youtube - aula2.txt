@@ -1,0 +1,43 @@
+Professor - Eliseu Lemes
+YouTube - PlayList Algoritmos e Linguagem de Programação em C++
+
+Aula2: Declarando variáveis e constantes
+
+Código:
+
+#include "iostream"
+#include "cstdlib"
+#include "math.h"
+using namespace std;
+
+*/1 Variáveis Globais fora de qualquer função
+
+ double const pes1 = 0.35; //constante
+ double const pes2 = 0.65; //constante
+
+ double nota1, nota2, mediaP; //variáveis globais
+
+int main ()
+{
+ setlocale(LC_ALL, "Portuguese");
+
+ system("cls"); //apaga a tela
+
+ cout << "Digite a nota1: "; //ler a nota 1
+ cin >> nota1;
+
+ cout << "Digite a nota2: "; //ler a nota 2
+ cin >> nota2;
+
+ mediaP = nota1 * pes1 + nota2 * pes2; //calcula a média
+
+ if (mediaP >= 6)
+	cout << "\nAluno Aprovado!";
+ else
+	cout << "\nAluno Reprovado!";
+
+ cout << "\nO valor da Média é: " << mediaP << endl;
+
+ system("pause");
+}
+

@@ -1,0 +1,51 @@
+Inserindo Departamentos
+
+INSERT INTO `departamento`(`sigla_depto`, `nome_depto`) VALUES ('FIN','Financeiro');
+INSERT INTO `departamento`(`sigla_depto`, `nome_depto`) VALUES ('RH','Recursos Humanos');
+INSERT INTO `departamento`(`sigla_depto`, `nome_depto`) VALUES ('MKT','Marketing');
+INSERT INTO `departamento`(`sigla_depto`, `nome_depto`) VALUES ('TI','Tecnologia da Informação');
+INSERT INTO `departamento`(`sigla_depto`, `nome_depto`) VALUES ('VND','Vendas');
+
+Inserindo Empregados
+
+INSERT INTO `empregado`(`cpf_empregado`, `Departamento_sigla_depto`, `Empregado_cpf_supervisor`, `nome_empregado`, `data_inicio_trabalho`) VALUES ('433.533.633-77','TI','322.422.522-66','Felipe Araujo','2004-06-14')
+INSERT INTO `empregado`(`cpf_empregado`, `Departamento_sigla_depto`, `Empregado_cpf_supervisor`, `nome_empregado`, `data_inicio_trabalho`) VALUES ('511.611.711-88','FIN','322.422.522-66','Paulo Oliveira','2017-11-03')
+INSERT INTO `empregado`(`cpf_empregado`, `Departamento_sigla_depto`, `Empregado_cpf_supervisor`, `nome_empregado`, `data_inicio_trabalho`) VALUES ('644.744.844-99','RH','322.422.522-66','Amanda Santos','2022-01-10')
+INSERT INTO `empregado`(`cpf_empregado`, `Departamento_sigla_depto`, `Empregado_cpf_supervisor`, `nome_empregado`, `data_inicio_trabalho`) VALUES ('755.855.955-00','VND','322.422.522-66','Simone Padro','2023-02-04')
+
+Inserindo Dependentes
+
+INSERT INTO `dependente`(`Empregado_cpf_empregado`, `nome_dependente`, `sexo_dependente`) VALUES ('433.533.633-77','Beatriz Araujo','F');
+INSERT INTO `dependente`(`Empregado_cpf_empregado`, `nome_dependente`, `sexo_dependente`) VALUES ('322.422.522-66','Arthur Farani','M');
+INSERT INTO `dependente`(`Empregado_cpf_empregado`, `nome_dependente`, `sexo_dependente`) VALUES ('755.855.955-00','Marcelo Padro','M');
+INSERT INTO `dependente`(`Empregado_cpf_empregado`, `nome_dependente`, `sexo_dependente`) VALUES ('755.855.955-00','Marina Padro','F');
+
+Inserindo Projetista
+
+INSERT INTO `projetisa`(`Empregado_cpf_empregado`, `especializacao`) VALUES ('433.533.633-77','Projetista Gráfico');
+INSERT INTO `projetisa`(`Empregado_cpf_empregado`, `especializacao`) VALUES ('322.422.522-66','Projetista de Produto');
+INSERT INTO `projetisa`(`Empregado_cpf_empregado`, `especializacao`) VALUES ('511.611.711-88','Gerenciamento Processo');
+INSERT INTO `projetisa`(`Empregado_cpf_empregado`, `especializacao`) VALUES ('755.855.955-00','Análise de Mercado');
+INSERT INTO `projetisa`(`Empregado_cpf_empregado`, `especializacao`) VALUES ('644.744.844-99','Análise de dados de RH');
+
+Inserindo Projeto
+
+INSERT INTO `projeto`(`id_projeto`, `Projetisa_Empregado_cpf_empregado`, `nome_projeto`) VALUES ('','644.744.844-99','Novos Treinamentos');
+INSERT INTO `projeto`(`id_projeto`, `Projetisa_Empregado_cpf_empregado`, `nome_projeto`) VALUES ('','511.611.711-88','Automação Pagtos');
+INSERT INTO `projeto`(`id_projeto`, `Projetisa_Empregado_cpf_empregado`, `nome_projeto`) VALUES ('','433.533.633-77','Implantação Sistema');
+
+Inserindo Desenvolve
+
+INSERT INTO `desenvolve`(`Empregado_cpf_empregado`, `Projeto_id_projeto`) VALUES ('644.744.844-99','1');
+INSERT INTO `desenvolve`(`Empregado_cpf_empregado`, `Projeto_id_projeto`) VALUES ('511.611.711-88','2');
+INSERT INTO `desenvolve`(`Empregado_cpf_empregado`, `Projeto_id_projeto`) VALUES ('433.533.633-77','3');
+
+Inserindo Controle
+
+INSERT INTO `controle`(`Projeto_id_projeto`, `Departamento_sigla_depto`) VALUES ('1','RH');
+INSERT INTO `controle`(`Projeto_id_projeto`, `Departamento_sigla_depto`) VALUES ('2','FIN');
+INSERT INTO `controle`(`Projeto_id_projeto`, `Departamento_sigla_depto`) VALUES ('3','TI');
+
+
+
+                                                                

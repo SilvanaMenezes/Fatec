@@ -1,0 +1,71 @@
+Professor - Eliseu Lemes
+YouTube - PlayList Algoritmos e Linguagem de Programação em C++
+
+Aula4: Programação Estruturada - parte 2
+
+Código:
+
+#include "iostream"
+#include "math.h"
+#include "cstdlib"
+#include "conio.h"
+using namespace std;
+
+// criando as funções de entrada/leitura
+
+double lerValorX(){
+ double valor;
+ cout << "\nDigite o valor de X: ";
+ cin >> valor;
+ return valor;
+}
+
+double lerValorY(){
+ double valor;
+ cout << "\nDigite o valor de Y: ";
+ cin >> valor;
+ return valor;
+}
+
+// criando as funções de cálculo
+
+double getmediaG(double x, double y){
+ double mg;
+ mg = sqrt(x * y);
+ return mg;
+}
+
+// criando funções ou voids de exibição ou saída
+
+void exibir(double x, double y, double mg){
+ system("cls");
+ cout << "\nValor de X: " << x;
+ cout << "\nValor de Y: " << y;
+ cout << "\nValor da Média Geométrica: " << mg;
+ getch();
+}
+
+int main(void){
+// criando as variáveis de execução
+
+ double vx, vy, mg;
+ char tecla;
+ 
+ while(tecla != 27){
+  cout << "\nMenu\n1-Executar \nEsc - Sair\n";
+  tecla = getch();
+  switch(tecla)
+  case '1': {
+	vx = lerValorX();
+	vy = lerValorY();
+	mg = getmediaG(vx, vy);
+	exibir(vx, vy, mg);
+    break;
+  } 
+ }
+ return 0;
+}
+
+
+
+

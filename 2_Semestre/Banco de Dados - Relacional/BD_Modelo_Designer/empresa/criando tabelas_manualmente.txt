@@ -1,0 +1,22 @@
+// Criando Departamento
+CREATE TABLE departamento (sigla_departamento varchar(3) NOT NULL PRIMARY KEY, nome_departamento varchar(20));
+
+//Criando Empregado
+CREATE TABLE empregado (cpf_empregado varchar(15) NOT Null PRIMARY KEY, nome_empregado varchar(50), data_inicio_trabalho date, cpf_supervisor varchar(15) NOT Null, FOREIGN KEY (cpf_supervisor) REFERENCES empregado (cpf_empregado), sigla_depto varchar(3) NOT Null, FOREIGN KEY (sigla_depto) REFERENCES departamento (sigla_departamento));
+
+
+//Criando Dependentes
+CREATE TABLE dependente (nome_dependente varchar(50), sexo_dependente varchar(01), cpf_titular varchar(15) NOT Null, FOREIGN KEY (cpf_titular) REFERENCES empregado (cpf_empregado));
+
+
+//Criando Projeto
+CREATE TABLE projeto (idProjeto int NOT Null PRIMARY KEY, nome_projeto varchar(50), especialista varchar(45) NOT Null, FOREIGN KEY (especialista) REFERENCES empregado (cpf_empregado));
+
+//Criando Projetista
+CREATE TABLE projetista (cpf_projetista varchar(15) NOT Null UNIQUE, especializacao varchar(45) NOT Null, FOREIGN KEY (cpf_projetista) REFERENCES empregado (cpf_empregado));
+
+//Criando Controle
+CREATE TABLE controle (codProjeto int NOT Null, FOREIGN KEY (codProjeto) REFERENCES projeto (idProjeto), codDepto varchar(3) NOT Null, FOREIGN KEY (codDepto) REFERENCES departamento (sigla_departamento)); 
+
+//Desenvolve
+CREATE TABLE desenvolve (nu_empregado varchar(15) NOT Null, FOREIGN KEY (nu_empregado) REFERENCES empregado (cpf_empregado), nu_Projeto int NOT Null, FOREIGN KEY (nu_Projeto) REFERENCES projeto (idProjeto));  

@@ -1,0 +1,36 @@
+Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, utilizando a fórmula PRESTACAO = VALOR + (VALOR * TAXA/100) * TEMPO.
+
+#include "iostream"
+#include "math.h"
+#include "cstdlib"
+#include "iomanip"
+using namespace std;
+
+int main()
+{
+ system("clear");
+ setlocale(LC_ALL, "Portuguese");
+
+ double prestacao;
+ float valor;
+ int taxa = 10, dias;
+
+ cout << "\nDigite o valor da prestação: R$";
+ cin >> valor;
+
+ cout << "\nDigite quantos dias de atraso está a prestação: ";
+ cin >> dias;
+ 
+ prestacao = valor + (valor * taxa/100) * dias;
+ cout << setprecision(2) << fixed;
+
+ cout << "\nA prestação em atraso tem o valor de: R$" << prestacao << endl;
+
+ system("sleep 2");
+
+ return 0;
+}
+
+
+
+ 

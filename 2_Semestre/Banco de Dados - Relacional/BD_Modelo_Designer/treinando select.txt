@@ -1,0 +1,42 @@
+Quantas unidades o proprietário 1 possui?
+SELECT COUNT(*) FROM proprietario WHERE Pessoa_id_pessoa = 1;
+
+Selecione o valor de aluguel que seja maior que 300 e da unidade 1.
+SELECT * FROM aluguel WHERE Unidade_Condominial_id_unid_cond = 1 AND valor > 300;
+
+Existem valores maiores que 1.000?
+
+Quais unidades foram alugadas entre 12/2022 e 04/2023?
+SELECT * FROM aluguel WHERE data_inicio  BETWEEN '2022-12-01' and '2023-04-30';
+SELECT * FROM aluguel WHERE data_inicio NOT BETWEEN '2023-04-01' and '2023-04-03';
+
+
+Selecionar os nomes que começam com a Letra J
+SELECT nome_pessoa FROM pessoa WHERE nome_pessoa LIKE 'J%';
+
+Selecionar os nomes que terminam com a letra A
+SELECT nome_pessoa FROM pessoa WHERE nome_pessoa LIKE '%A';
+SELECT nome_pessoa FROM pessoa WHERE nome_pessoa NOT LIKE '%A';
+
+Selecionar os nomes que tem A
+SELECT nome_pessoa FROM pessoa WHERE nome_pessoa LIKE '__A';
+
+Mostre o maior valor de aluguel
+SELECT max(valor) FROM aluguel;
+
+Mostre o menor valor de Aluguel
+SELECT min(valor) FROM aluguel;
+
+Mostre a media de alugueis feito
+SELECT avg(valor) FROM aluguel;
+
+Mostre o valor total de alugueis feitos
+SELECT sum(valor) FROM aluguel;
+
+Mostre o Endereço e  o Nome do Proprietario das unidades Condominais
+
+SELECT unidade_condominial.id_unid_cond, unidade_condominial.endereco_unid_cond, pessoa.nome_pessoa FROM unidade_condominial INNER JOIN proprietario ON unidade_condominial.id_unid_cond = proprietario.Unidade_Condominial_id_unid_cond INNER JOIN pessoa on pessoa.id_pessoa = proprietario.Pessoa_id_pessoa ORDER BY id_unid_cond ASC;
+
+
+
+

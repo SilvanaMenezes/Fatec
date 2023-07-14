@@ -1,0 +1,47 @@
+Efetuar o cálculo da quantidade de litros de combustível gasta em uma viagem, utilizando um 
+
+automóvel que faz 12 Km por litro. Para obter o cálculo, o usuário deve fornecer o tempo gasto 
+
+(TEMPO) e a velocidade média (VELOCIDADE) durante a viagem. Desta forma, será possível obter a 
+
+distância percorrida com a fórmula DISTANCIA = TEMPO * VELOCIDADE. Possuindo o valor da 
+
+distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a fórmula 
+
+LITROS_USADOS = DISTANCIA / 12. Ao final, o programa deve apresentar os valores da velocidade 
+
+média (VELOCIDADE), tempo gasto na viagem (TEMPO), a distancia percorrida (DISTANCIA) e a 
+
+quantidade de litros (LITROS_USADOS) utilizada na viagem.
+
+#include "iostream"
+#include "math.h"
+#include "cstdlib"
+#include "iomanip"
+#define kml 12 
+using namespace std;
+
+int main()
+{
+ system("clear");
+ setlocale(LC_ALL, "Portuguese");
+
+ float tempo, velocidade, distancia, litros_usados;
+ 
+ cout << "\nDigite o tempo gasto na viagem: ";
+ cin >> tempo;
+
+ cout << "\nDigite a velocidade média percorrida durante a viagem: ";
+ cin >> velocidade;
+
+ distancia = tempo * velocidade;
+ litros_usados = distancia / kml;
+ 
+ cout << setprecision(2) << fixed;
+
+ cout << "\nSua viagem é de " << distancia << "km" << " com tempo percorrido de " << tempo << "min na velocidade média de " << velocidade << "km/h" << " com gasto de " << litros_usados << "km/l de combustível." << endl;
+
+ system("sleep 2");
+ 
+ return 0;
+} 

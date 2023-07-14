@@ -1,0 +1,74 @@
+#include "iostream"
+#include "cstdlib"
+#define t 5
+using namespace std;
+
+typedef struct lista tab;
+
+struct lista {
+	int pk[t];
+	string nome[t];
+	double salario[t];
+	
+};
+
+tab tb1;
+
+void newlinha(int linha, string nome, double salario, int codpk){
+	tb1.pk[linha] = codpk;
+	tb1.nome[linha] = nome;
+	tb1.salario[linha] = salario;
+}
+
+void exibirTb1(int ultlinha){
+	system("cls");
+	for(int pos=0; pos<=ultlinha; pos++){
+		cout << tb1.pk[pos] << "|" << tb1.nome[pos] << "|" << tb1.salario[pos] << endl;
+	}
+}
+	
+bool deleteLinha(int codpk, int ultlinha){
+	for (int i=0; i<=ultlinha; i++){
+		if (codpk == tb1.pk[i]){
+			for(int j=i; j<ultlinha; j++){			
+				tb1.pk[j] = tb1.pk[j+1];
+				tb1.nome[j] = tb1.nome[j+1];
+				tb1.salario[j] = tb1.salario[j+1];
+			}
+			return true;			
+		}
+	}
+	cout << "\nO campo " << codpk << " não foi encontrado!\n";
+	system("pause");
+	return false;
+}
+
+int main(void){
+	setlocale(LC_ALL, "Portuguese");
+	
+	int linha =-1; bool deletar;
+	
+	linha++;
+	newlinha(linha, "Silvana", 5000, 001);
+	linha++;
+	newlinha(linha, "Larissa", 5000, 002);
+	linha++;
+	newlinha(linha, "Giuliana", 5000, 003);	
+	exibirTb1(linha);
+	
+	system("pause");
+	
+	deletar = deleteLinha(002,linha);
+	if(deletar){
+		linha--; 
+		exibirTb1(linha);
+	}
+	
+	deletar = deleteLinha(004,linha);
+	if(deletar){
+		linha--; 
+		exibirTb1(linha);
+	}
+	
+	return 0;
+}

@@ -1,0 +1,16 @@
+Inserindo Departamentos
+
+INSERT INTO `departamento`(`sigla_depto`, `nome_depto`) VALUES ('FIN','Financeiro');
+INSERT INTO `departamento`(`sigla_depto`, `nome_depto`) VALUES ('RH','Recursos Humanos');
+INSERT INTO `departamento`(`sigla_depto`, `nome_depto`) VALUES ('MKT','Marketing');
+INSERT INTO `departamento`(`sigla_depto`, `nome_depto`) VALUES ('TI','Tecnologia da Informação');
+INSERT INTO `departamento`(`sigla_depto`, `nome_depto`) VALUES ('VND','Vendas');
+
+
+Inserindo Empregados
+
+INSERT INTO `empregado`(`cpf_empregado`, `Departamento_sigla_depto`, `Empregado_cpf_empregado`, `nome_empregado`, `data_inicio_trabalho`) VALUES ('11111111111','ADM','22222222222','Fabio Alcantara','2010-11-15');
+INSERT INTO `empregado`(`cpf_empregado`, `Departamento_sigla_depto`, `Empregado_cpf_empregado`, `nome_empregado`, `data_inicio_trabalho`) VALUES ('22222222222','ADM','22222222222','Camila Farani','2023-02-04');
+INSERT INTO `empregado`(`cpf_empregado`, `Departamento_sigla_depto`, `Empregado_cpf_empregado`, `nome_empregado`, `data_inicio_trabalho`) VALUES ('44444444444','ADM','22222222222','Renata Amaral','2015-06-21');
+
+                                                                

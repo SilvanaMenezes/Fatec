@@ -1,0 +1,51 @@
+Professor - Eliseu Lemes
+YouTube - PlayList Algoritmos e Linguagem de Programação em C++
+
+Aula3: Programação Estruturada - parte 1
+
+Código: função sem parâmetro.
+
+#include "iostream"
+#include "cstdlib"
+#include "math.h"
+using namespace std;
+
+double ler_salario(){
+ double sal;
+ cout << "\nDigite o valor do salário: ";
+ cin >> sal;
+
+ return sal;
+}
+
+int main(){
+ double salario;
+ salario = ler_salario();
+ cout << salario;
+
+ return 0;
+}
+
+
+Código: função com parâmetro.
+
+#include "iostream"
+#include "cstdlib"
+#include "math.h"
+using namespace std;
+
+double calcularMedia(double n1, double n2){
+ double media;
+ media = (n1 + n2)/2
+ return media;
+}
+
+int main(){
+ double nota1 = 10, nota2 = 4, valor_media;
+ valor_media = calcularMedia(nota1,nota2);
+ cout << valor_media;
+ return 0;
+}
+ 
+
+

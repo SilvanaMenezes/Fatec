@@ -1,0 +1,135 @@
+#includes
+using namespace std;
+
+variáveis globais;
+
+void principal (){
+	void exeA(){
+		void ler(){
+			//códigos ler
+		}
+		void mostrar(){
+			//códigos mostrar
+		}
+		void menu(){
+		}
+		int main(){
+			//chamar menu()
+		}
+	}
+
+	void exeB(){
+		void ler(){
+			//códigos ler
+		}
+		void mostrar(){
+			//códigos mostrar
+		}
+		void menu(){
+		}
+		int main(){
+			//chamar menu()
+		}
+	}
+	void exeC(){
+		void ler(){
+			//códigos ler
+		}
+		void mostrar(){
+			//códigos mostrar
+		}
+		void menu(){
+		}
+		int main(){
+			//chamar menu()
+		}
+	}
+	void exeD(){
+		void ler(){
+			//códigos ler
+		}
+		void mostrar(){
+			//códigos mostrar
+		}
+		void menu(){
+		}
+		int main(){
+			//chamar menu()
+		}
+	}
+	void exeE(){
+		void ler(){
+			//códigos ler
+		}
+		void mostrar(){
+			//códigos mostrar
+		}
+		void menu(){
+		}
+		int main(){
+			//chamar menu()
+		}
+	}
+	void exeF(){
+		void ler(){
+			//códigos ler
+		}
+		void mostrar(){
+			//códigos mostrar
+		}
+		void menu(){
+		}
+		int main(){
+			//chamar menu()
+		}
+	}
+	void exeG(){
+		void ler(){
+			//códigos ler
+		}
+		void mostrar(){
+			//códigos mostrar
+		}
+		void menu(){
+		}
+		int main(){
+			//chamar menu()
+		}
+	}
+	
+	system("pause");
+}
+
+void menu(){
+	int item =0;
+	do{
+	    system("cls");
+		cout << "***Menu de Controle***\n";
+		cout << "1 exeA............\n";
+		cout << "2 exeB...........\n";
+		cout << "3 exeC...........\n";
+		cout << "4 exeD...........\n";
+		cout << "5 exeE...........\n";
+		cout << "6 exeF...........\n";
+		cout << "7 exeG...........\n";
+		cout << "8 Sair...........\n";
+		cout << "item> ";
+		cin >> item;
+         
+         	switch (item){   
+				case 1:  exeA(); break;  // chama a sub rotina principal
+				case 2:  exeB(); break;
+				case 3:  exeC(); break;
+				case 4:  exeD(); break;
+				case 5:  exeE(); break;
+				case 6:  exeF(); break;		
+  				case 7:  exeG(); break;           
+             			case 8:  exit(0); break;
+             
+             			default : cout << "Erro de Operação!\n";
+                       		system("pause");
+                       		break;
+         	}         
+         
+     	} while (true);
+} 
